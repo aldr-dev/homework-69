@@ -2,13 +2,17 @@ import React from 'react';
 import './SearchForm.css';
 
 const SearchForm = () => {
+
+  // const handleFieldInput = (event: React.ChangeEvent<HTMLInputElement>) => {
+  //
+  // };
+
   return (
-
-
     <div className="search-form">
       <label className="search-form-label">
         <span className="search-form-title">Search for TV Shows:</span>
           <input
+            // onChange={handleFieldInput}
             className="search-form-field"
             placeholder="Search for TV Shows"
             type="text"/>
