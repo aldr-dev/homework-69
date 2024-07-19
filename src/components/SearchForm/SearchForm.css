@@ -25,16 +25,40 @@
   padding: 0 10px;
 }
 
-.search-form-field::-webkit-search-cancel-button {
-  -webkit-appearance: none;
-  height: 16px;
-  width: 16px;
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>') no-repeat center center;
-  cursor: pointer;
-}
-
 .search-form-field:focus {
   outline: 1px solid #2196F3;
+}
+
+.item-shows-details {
+  position: absolute;
+  top: 50px;
+  left: 220px;
+  width: 81%;
+}
+
+.item-shows-inner {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #2196F3;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.item-shows-details-item {
+  padding: 10px 15px;
+  text-decoration: none;
+  background: rgba(33, 150, 243, 0.8);
+  margin-bottom: 4px;
+  color: #000;
+  transition: .2s ease-in-out;
+}
+
+.item-shows-details-item:hover {
+  background: rgba(33, 150, 243, 0.6);
+}
+
+.item-shows-details-item:last-child {
+  margin-bottom: 0;
 }
 
 .search-form-spinner {
@@ -47,7 +71,7 @@
   border: 3px solid #2196F3;
   border-top-color: #fff;
   border-radius: 50%;
-  animation: spin 1s linear infinite;
+  animation: spin 1s infinite;
   text-align: center;
   vertical-align: middle;
 }

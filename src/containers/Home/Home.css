@@ -1,0 +1,38 @@
+.shows-details-wrapper {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.show-details-btn {
+  text-decoration: none;
+  display: inline-block;
+  background: #2196F3;
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 5px;
+  transition: .2s ease-in-out;
+  cursor: pointer;
+}
+
+.show-details-btn:hover {
+  background: #0a73c7;
+}
+
+.details-shows-spinner {
+  display: inline-block;
+  width: 20px;
+  font-size: 0;
+  height: 20px;
+  border: 3px solid #2196F3;
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  text-align: center;
+  vertical-align: middle;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
